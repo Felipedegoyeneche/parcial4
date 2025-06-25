@@ -48,6 +48,38 @@ def mostrar_menu():
     print("3.- Cancelar compra.")
     print("4.- Salir.")
 
+def main():
+    entradas = {}
+    while True:
+        mostrar_menu()
+        opcion = input("Ingrese opción: ").strip()
+        if opcion == "1":
+            comprar_entrada(entradas)
+        elif opcion == "2":
+            consultar_comprador(entradas)
+        elif opcion == "3":
+            cancelar_compra(entradas)
+        elif opcion == "4":
+            print("Programa terminado...")
+            break
+        else:
+            print("Debe ingresar una opción válida!!")
+
+    entradas = {}
+    while True:
+        mostrar_menu()
+        opcion = input("Ingrese opción: ").strip()
+        if opcion == "1":
+            comprar_entrada(entradas)
+        elif opcion == "2":
+            consultar_comprador(entradas)
+        elif opcion == "3":
+            cancelar_compra(entradas)
+        elif opcion == "4":
+            print("Programa terminado...")
+            break
+        else:
+            print("Debe ingresar una opción válida!!")
 
 if __name__ == "__main__":
     main()
